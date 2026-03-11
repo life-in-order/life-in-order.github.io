@@ -34,3 +34,33 @@ Pages and layouts live under `lifeinorder/app/`:
 - `globals.css` — global styles and Tailwind import
 
 New routes are added as directories under `app/` following Next.js App Router conventions (e.g., `app/tasks/page.tsx`).
+
+## Product Vision
+
+See `docs/PRD.md` for the full PRD. Summary:
+
+**Life, In Order** is a timeline-based life responsibility tracker. Users enter their age plus the age of their house and car, and get a personalized timeline of ongoing responsibilities across health, home, car, finances, and career — each with expert-vetted step-by-step guidance and activation-energy reducers (email templates, phone scripts, provider links, calendar buttons).
+
+### Build Phases
+1. **Phase 1 (MVP)**: Timeline UX + curated checklist items + personalization
+2. **Phase 2**: Email reminders (Brevo) + accountability features + calendar integration
+3. **Phase 3**: Custom user-added items
+4. **Phase 4**: User-contributed checklists + social features
+
+## Third-Party Services
+
+| Service | Tool | Notes |
+|---------|------|-------|
+| Email reminders | Brevo | Phase 2 |
+| Calendar | Google Calendar / "Add to calendar" links | Phase 1/2 |
+| Auth | Anonymous (localStorage) in Phase 1; Supabase Auth in Phase 2 | — |
+| Database | Supabase (managed Postgres) | — |
+| Hosting | Vercel | — |
+
+## Key Data Entities
+
+- **User** — age, completed item IDs
+- **House** — age, completed item IDs
+- **Car** — age, completed item IDs
+- **ChecklistTopic** — category grouping items
+- **ChecklistItem** — title, description, why, criticality (Red/Yellow/Green), steps, source, entity type, target age
