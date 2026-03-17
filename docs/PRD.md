@@ -62,7 +62,8 @@ Everyone goes through life vaguely aware they should be responsible and keep up-
 - Per category (medical, homeownership, personal finance, etc.), a summary of tasks appears side by side
 
 ### Phase 1 Scope
-- Categories: Health, Home, Finances, Career (Car deferred to a later phase)
+- Categories: Health, Home, Finances (Career and Car deferred to post-launch)
+- Gender: gender-neutral combined view with callout badges on female- or male-specific items (`applicable_sex` field)
 
 ### Individual Checklist Item
 Each item includes:
@@ -84,35 +85,81 @@ User enters their age, the age of their house, and the age of their car — the 
 
 ### Data Model
 
-**User**
-- Age
-- List of completed checklist item IDs
+#### `category`
+Groups items into sections on the timeline.
 
-**House**
-- Age
-- List of completed checklist item IDs
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | uuid | PK |
+| `name` | text | "Health", "Home", "Finances", "Career" |
+| `description` | text | |
+| `entity_type` | text | `"user"` or `"house"` — whose age drives timing. Text (not enum) so adding "car" later requires no migration |
+| `display_order` | int | Order shown in UI |
 
-**Car**
-- Age
-- List of completed checklist item IDs
+#### `checklist_item`
 
-**Checklist Topic**
-- Description
-- List of checklist item IDs
-- Entity type it applies to (user, house, car)
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | uuid | PK |
+| `category_id` | uuid | FK → category |
+| `title` | text | |
+| `subtitle` | text | One-liner summary for timeline card previews |
+| `description` | text | Full description of what to do |
+| `why` | text | Why / what happens if you don't |
+| `criticality` | text | `"red"`, `"yellow"`, or `"green"` |
+| `applicable_sex` | text | `"all"`, `"female"`, or `"male"`. Items with `"female"` or `"male"` show a callout badge in the UI. Default is `"all"`. |
+| `estimated_time` | text | e.g. "30 minutes" |
+| `estimated_cost` | text | Optional, e.g. "$20–$50" |
+| `source` | text | URL or citation |
+| `start_age` | int | Age (of entity) when this first applies |
+| `end_age` | int | Nullable — if item stops applying after an age |
+| `recurrence` | jsonb | See recurrence schema below |
 
-**Individual Checklist Item**
-- ID
-- Title
-- Description
-- Why should I do this
-- Criticality (Red / Yellow / Green)
-- Step-by-step instructions (ordered list)
-- Source
-- Time to complete
-- Monetary cost (optional)
-- Entity type (user, house, car)
-- Age/year it should be completed
+**Recurrence JSONB schema:**
+```json
+{ "type": "one_time" }
+{ "type": "recurring", "every_months": 12 }
+{ "type": "recurring", "every_months": 6 }
+{ "type": "recurring", "every_months": 120 }
+{ "type": "age_range", "every_months": 12, "start_age": 40, "end_age": 75 }
+```
+Using months as the base unit handles everything from quarterly (3) to decadal (120) without a separate unit field. New recurrence types can be added by extending the frontend logic — no schema migration needed.
+
+#### `item_step`
+Ordered step-by-step instructions per item.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | uuid | PK |
+| `item_id` | uuid | FK → checklist_item |
+| `step_order` | int | Sort order |
+| `text` | text | Instruction |
+| `resource_url` | text | Nullable — link for this step |
+
+#### `item_resource`
+Activation energy reducers (email templates, phone scripts, provider links). Aspirational for Phase 1 — table is designed but may not be populated initially.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | uuid | PK |
+| `item_id` | uuid | FK → checklist_item |
+| `type` | text | `"email_template"`, `"phone_script"`, `"provider_link"`, `"calendar_event"` |
+| `label` | text | Button/link label shown in UI |
+| `content` | text | Template text, script, URL, or calendar data |
+
+#### localStorage (Phase 1 — no DB)
+```json
+{
+  "profile": {
+    "userAge": 35,
+    "houseAge": 8
+  },
+  "completions": {
+    "<item-uuid>": "2025-11-01T00:00:00Z"
+  }
+}
+```
+Phase 2 migration: on first login, read localStorage and upsert into a `user_completion` table.
 
 ### Checklist Data Strategy
 - Source data lives in Google Sheets (medical and home ownership timelines)
@@ -168,13 +215,17 @@ User enters their age, the age of their house, and the age of their car — the 
 | Decision | Choice | Notes |
 |----------|--------|-------|
 | Phase 1 auth | Anonymous / localStorage | Supabase Auth added in Phase 2 |
-| Database | Supabase (managed Postgres) | Low maintenance, built-in auth ready for Phase 2 |
+| Phase 1 data source | JSON files in `app/lib/data/` | Supabase introduced in Phase 2; no cost or lock-in for Phase 1 |
+| Database (Phase 2) | Supabase (managed Postgres) | Low maintenance, built-in auth, standard Postgres underneath |
+| Data access layer | `app/lib/db/` functions only | Pages never import data directly; only `lib/db/` changes in Phase 2 migration |
 | Hosting | Vercel | Free tier, native Next.js support |
 | Email | Brevo | Phase 2 |
-| Car category | Deferred | Not in Phase 1 scope |
-| Checklist data | Seed script → Supabase | No runtime Google Sheets dependency |
+| Car category | Deferred post-launch | — |
+| Career category | Deferred post-launch | — |
+| Checklist data | CSV → seed script → JSON files | No runtime Google Sheets or Supabase dependency in Phase 1 |
 | Timeline browsability | Browsable by default | Personalization prompt shown prominently |
 | Completion persistence | localStorage | Acceptable to lose on browser clear |
+| Gender | Gender-neutral combined view | `applicable_sex` field drives callout badges on female/male-specific items |
 
 ## Open Questions
 

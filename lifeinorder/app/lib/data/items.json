@@ -1,0 +1,1036 @@
+[
+  {
+    "id": "flu-vaccine",
+    "category_id": "health",
+    "title": "Flu Vaccine",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 1,
+    "end_age": 75,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "hpv-vaccine",
+    "category_id": "health",
+    "title": "HPV Vaccine",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 11,
+    "end_age": 12,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "covid-vaccine",
+    "category_id": "health",
+    "title": "Covid Vaccine",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 12,
+    "end_age": 75,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "hep-c-screening",
+    "category_id": "health",
+    "title": "Hep C Screening",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 18,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "lipid-panel",
+    "category_id": "health",
+    "title": "Lipid Panel",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 20,
+    "end_age": 75,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "cervical-cancer-screening",
+    "category_id": "health",
+    "title": "Cervical cancer screening",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "female",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 21,
+    "end_age": 65,
+    "recurrence": {
+      "type": "age_range",
+      "every_months": 60,
+      "start_age": 21,
+      "end_age": 65
+    },
+    "steps": []
+  },
+  {
+    "id": "diabetes-screening",
+    "category_id": "health",
+    "title": "Diabetes Screening",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 34,
+    "end_age": 73,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 36
+    },
+    "steps": []
+  },
+  {
+    "id": "mammogram",
+    "category_id": "health",
+    "title": "Mammogram",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "female",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 40,
+    "end_age": 75,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "colonoscopy",
+    "category_id": "health",
+    "title": "Colonoscopy",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 45,
+    "end_age": 75,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 120
+    },
+    "steps": []
+  },
+  {
+    "id": "stool-screening",
+    "category_id": "health",
+    "title": "Stool screening",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 46,
+    "end_age": 74,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "shingles-vaccine",
+    "category_id": "health",
+    "title": "Shingles Vaccine",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 50,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "shingles-vaccine-second-dose",
+    "category_id": "health",
+    "title": "Shingles Vaccine second dose",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 50,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "osteoporosis-repeated-as-directed-by-physician",
+    "category_id": "health",
+    "title": "Osteoporosis (repeated as directed by physician)",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "female",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 65,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "sign-up-for-medicare",
+    "category_id": "health",
+    "title": "Sign up for Medicare",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 65,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "hepatitis-b",
+    "category_id": "health",
+    "title": "Hepatitis B",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "male",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 18,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "colonoscopy-if-ibs",
+    "category_id": "health",
+    "title": "Colonoscopy if IBS",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "male",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 35,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "prostate-exam-if-history-of-prostate-cancer",
+    "category_id": "health",
+    "title": "Prostate exam if history of prostate cancer",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "male",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 45,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "prostate-exam",
+    "category_id": "health",
+    "title": "Prostate exam",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "male",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 50,
+    "end_age": 69,
+    "recurrence": {
+      "type": "age_range",
+      "every_months": 60,
+      "start_age": 50,
+      "end_age": 69
+    },
+    "steps": []
+  },
+  {
+    "id": "change-locks",
+    "category_id": "home",
+    "title": "Change locks",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 1,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "test-smoke-co-detectors",
+    "category_id": "home",
+    "title": "Test smoke & CO detectors",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 1,
+    "end_age": 25,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "replace-hvac-filter",
+    "category_id": "home",
+    "title": "Replace HVAC filter",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 1,
+    "end_age": 25,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "check-fire-extinguisher",
+    "category_id": "home",
+    "title": "Check fire extinguisher",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 1,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "inspect-caulking-around-tubs-windows",
+    "category_id": "home",
+    "title": "Inspect caulking around tubs/windows",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 3,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "service-hvac-system",
+    "category_id": "home",
+    "title": "Service HVAC system",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 5,
+    "end_age": 12,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 84
+    },
+    "steps": []
+  },
+  {
+    "id": "check-water-heater-anode-rod",
+    "category_id": "home",
+    "title": "Check water heater anode rod",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 5,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "inspect-roof",
+    "category_id": "home",
+    "title": "Inspect roof",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 8,
+    "end_age": 15,
+    "recurrence": {
+      "type": "age_range",
+      "every_months": 24,
+      "start_age": 8,
+      "end_age": 15
+    },
+    "steps": []
+  },
+  {
+    "id": "check-water-heater",
+    "category_id": "home",
+    "title": "Check water heater",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 8,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "replace-water-heater-if-needed",
+    "category_id": "home",
+    "title": "Replace water heater if needed",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 10,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "check-exterior-paint",
+    "category_id": "home",
+    "title": "Check exterior paint",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 10,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "repaint-exterior",
+    "category_id": "home",
+    "title": "Repaint exterior",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 15,
+    "end_age": 25,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 120
+    },
+    "steps": []
+  },
+  {
+    "id": "replace-hvac-system-if-needed",
+    "category_id": "home",
+    "title": "Replace HVAC system if needed",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 18,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "roof-replacement-evaluation",
+    "category_id": "home",
+    "title": "Roof replacement evaluation",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 20,
+    "end_age": 25,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 60
+    },
+    "steps": []
+  },
+  {
+    "id": "replace-water-heater",
+    "category_id": "home",
+    "title": "Replace water heater",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 20,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "inspect-foundation",
+    "category_id": "home",
+    "title": "Inspect foundation",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 23,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "replace-major-appliances-if-needed",
+    "category_id": "home",
+    "title": "Replace major appliances if needed",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 25,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "open-checking-savings-account",
+    "category_id": "finances",
+    "title": "Open checking & savings account",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 18,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "establish-credit-secured-card",
+    "category_id": "finances",
+    "title": "Establish credit (secured card)",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 18,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "file-taxes",
+    "category_id": "finances",
+    "title": "File taxes",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 19,
+    "end_age": 65,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "review-budget",
+    "category_id": "finances",
+    "title": "Review budget",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 19,
+    "end_age": 65,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 12
+    },
+    "steps": []
+  },
+  {
+    "id": "start-401k-contributions",
+    "category_id": "finances",
+    "title": "Start 401k contributions",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 22,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "designate-beneficiaries",
+    "category_id": "finances",
+    "title": "Designate beneficiaries",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 22,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "review-insurance-coverage",
+    "category_id": "finances",
+    "title": "Review insurance coverage",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 25,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "review-health-insurance-off-parents-plan-at-26",
+    "category_id": "finances",
+    "title": "Review health insurance (off parents' plan at 26)",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 26,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "review-life-insurance",
+    "category_id": "finances",
+    "title": "Review life insurance",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 30,
+    "end_age": 40,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 120
+    },
+    "steps": []
+  },
+  {
+    "id": "review-estate-documents",
+    "category_id": "finances",
+    "title": "Review estate documents",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 30,
+    "end_age": 40,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 60
+    },
+    "steps": []
+  },
+  {
+    "id": "increase-retirement-contributions",
+    "category_id": "finances",
+    "title": "Increase retirement contributions",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 35,
+    "end_age": 45,
+    "recurrence": {
+      "type": "recurring",
+      "every_months": 120
+    },
+    "steps": []
+  },
+  {
+    "id": "catch-up-retirement-contributions-irs-limit-increase-at-50",
+    "category_id": "finances",
+    "title": "Catch-up retirement contributions (IRS limit increase at 50)",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 50,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "review-social-security-projections",
+    "category_id": "finances",
+    "title": "Review Social Security projections",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 50,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "review-retirement-withdrawal-strategy",
+    "category_id": "finances",
+    "title": "Review retirement withdrawal strategy",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 55,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "review-medicare-enrollment-timeline",
+    "category_id": "finances",
+    "title": "Review Medicare enrollment timeline",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 60,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "enroll-in-medicare-3-months-before-turning-65",
+    "category_id": "finances",
+    "title": "Enroll in Medicare (3 months before turning 65)",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 64,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "begin-medicare-coverage",
+    "category_id": "finances",
+    "title": "Begin Medicare coverage",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 65,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  },
+  {
+    "id": "review-social-security-claiming-strategy",
+    "category_id": "finances",
+    "title": "Review Social Security claiming strategy",
+    "subtitle": "",
+    "description": "",
+    "why": "",
+    "criticality": "yellow",
+    "applicable_sex": "all",
+    "estimated_time": "",
+    "estimated_cost": "",
+    "source": "",
+    "start_age": 65,
+    "end_age": null,
+    "recurrence": {
+      "type": "one_time"
+    },
+    "steps": []
+  }
+]

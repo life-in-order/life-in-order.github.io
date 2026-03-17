@@ -1,0 +1,23 @@
+[
+  {
+    "id": "health",
+    "name": "Health",
+    "description": "Medical screenings, vaccines, and preventive care.",
+    "entity_type": "user",
+    "display_order": 1
+  },
+  {
+    "id": "home",
+    "name": "Home",
+    "description": "Maintenance and upkeep to protect your home investment.",
+    "entity_type": "house",
+    "display_order": 2
+  },
+  {
+    "id": "finances",
+    "name": "Finances",
+    "description": "Tax, savings, insurance, and estate planning milestones.",
+    "entity_type": "user",
+    "display_order": 3
+  }
+]

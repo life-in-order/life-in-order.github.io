@@ -1,0 +1,11 @@
+# Design files
+*.pdf
+
+# Source data CSVs (used locally by seed script, not committed)
+*.csv
+
+# Original Google Docs export (canonical version is docs/PRD.md)
+docs/Life, In Order.md
+
+# Claude-generated working documents
+*.generated.md

@@ -54,8 +54,34 @@ See `docs/PRD.md` for the full PRD. Summary:
 | Email reminders | Brevo | Phase 2 |
 | Calendar | Google Calendar / "Add to calendar" links | Phase 1/2 |
 | Auth | Anonymous (localStorage) in Phase 1; Supabase Auth in Phase 2 | — |
-| Database | Supabase (managed Postgres) | — |
-| Hosting | Vercel | — |
+| Database | Supabase (managed Postgres) | Low maintenance, built-in auth for Phase 2 |
+| Hosting | Vercel | Free tier, native Next.js support |
+| Analytics | Umami | Set `NEXT_PUBLIC_UMAMI_WEBSITE_ID` env var to activate |
+
+## Architecture Decisions
+
+- **Data fetching**: Static generation (SSG) — checklist content changes rarely, a redeploy on content update is acceptable
+- **Routing**: Single page with all categories together for now. Individual category routes (`/health`, `/home`, etc.) are planned but not yet built — leave architectural space for them
+- **Mobile**: Graceful degradation required from day one
+- **Data source (Phase 1)**: JSON files in `app/lib/data/`. Supabase introduced in Phase 2.
+- **Data access layer**: All data fetching goes through `app/lib/db/` — pages and components never import from `app/lib/data/` or Supabase directly. This is the only file that changes when migrating to Supabase in Phase 2.
+  - `app/lib/db/categories.ts` → `getCategories()`
+  - `app/lib/db/items.ts` → `getItems()`, `getItemsByCategory()`, `getItemsByAge()`
+- **Seed script**: Converts CSVs → `app/lib/data/` JSON files (not Supabase in Phase 1)
+
+## Design
+
+Wireframe (`main_page.pdf`, gitignored): Three-column layout — Medical Summary, Personal Finance Summary, Home Ownership Summary — each showing a checklist of items. A horizontal scrolling age timeline sits at the bottom (e.g. 45, 50, 55, 65). Clicking an age on the timeline updates the items shown above.
+
+## Source Data
+
+CSVs are gitignored (local use only, fed into seed script):
+- `Medical Timeline Sheet - Female.csv`
+- `Medical Timeline Sheet - Male.csv`
+- `Home Ownership Timeline.csv`
+- `Personal Finance Timeline.csv`
+
+**Note**: Medical data has male/female variants — gender will need to be a personalization input (not in original PRD scope, to be confirmed).
 
 ## Key Data Entities
 
